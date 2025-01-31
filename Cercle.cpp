@@ -13,12 +13,12 @@ void Forme::operator+=(Forme &f)
     centre += f.centre;
 }
 
-Forme::Forme(PointPlan &point, int a, int b)
+Cercle::Cercle(PointPlan &point, int a, int b)
 {
-    PointPlan(a, b);
+    Forme(PointPlan &point, int a, int b);
 }
 
-int Forme::getForme()
+int Cercle::getCercle()
 {
-    return PointPlan::getX(), PointPlan::getY();
+    return getForme()
 }
