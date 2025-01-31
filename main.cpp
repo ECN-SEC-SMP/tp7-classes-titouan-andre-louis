@@ -7,6 +7,7 @@ using namespace std;
 
 // main
 int main() {
+    // PointPlan point1(10,5);
     PointPlan point1();
 
     point1.setX(10);

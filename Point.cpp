@@ -13,6 +13,12 @@ PointPlan::PointPlan(int a, int b)
     this->y = y;
 }
 
+PointPlan::PointPlan()
+{
+    this->x = 0;
+    this->y = 0;
+}
+
 int PointPlan::getX() { return x; };
 int PointPlan::getY() { return y; };
 
