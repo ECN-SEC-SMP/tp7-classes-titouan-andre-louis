@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
-#include "Point.h"
-#include "Forme.h"
+#include "Cercle.h"
+#include "Cercle.h"
 
 ostream& operator<<(ostream& aff, const Forme& f) {
     aff << "Coordonnées : " << f.centre << endl;
@@ -13,9 +13,9 @@ void Forme::operator+=(Forme &f)
     centre += f.centre;
 }
 
-Forme::Forme(PointPlan &point)
+Forme::Forme(PointPlan &point, int a, int b)
 {
-    this->centre = point;
+    PointPlan(a, b);
 }
 
 int Forme::getForme()

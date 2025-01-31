@@ -1,7 +1,7 @@
 all: main.out
 
-main.out: main.o Point.o
-	g++ -o main.out main.o Point.o 
+main.out: main.o Point.o Forme.o
+	g++ -o main.out main.o Point.o Forme.o
 
 main.o: main.cpp
 	g++ -c main.cpp

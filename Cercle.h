@@ -2,21 +2,22 @@
 #define __secsmp_forme_h
 #include <string>
 #include <iostream>
-#include "Point.h"
+#include "Forme.h"
 
 using namespace std;
 
-class Forme : public PointPlan {
+class Cercle : public Forme {
 
 private:
-    PointPlan centre;
+    Forme centre;
+    int Rayon;
     
 public:
     friend ostream& operator<<(ostream& aff, const Forme& f);
     void operator+=(Forme&);
     // Constructeurs
     Forme();
-    Forme(PointPlan &point);
+    Forme(PointPlan &point, int a, int b);
 
     // Accesseurs
     int getForme();
