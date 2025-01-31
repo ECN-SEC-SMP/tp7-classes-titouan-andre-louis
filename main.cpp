@@ -25,11 +25,5 @@ int main()
     // cout << point1.getX() << endl;
     // cout << point1.getY() << endl;
 
-    /*
-    point 1 += point2;
-    aff << point 1;    
-    */
-
-
     return 0;
 }

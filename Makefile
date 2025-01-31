@@ -8,3 +8,6 @@ main.o: main.cpp
 
 Point.o: Point.cpp Point.h
 	g++ -c Point.cpp
+
+Forme.o: Forme.cpp Forme.h
+	g++ -c Forme.cpp
