@@ -1,6 +1,7 @@
 #ifndef __secsmp_point_h
 #define __secsmp_point_h
 #include <string>
+#include <iostream>
 
 class PointPlan {
 private:
