@@ -11,6 +11,7 @@ public:
     void translater(PointPlan p);
     void translater(int x, int y);
 
+    // Constructeurs
     PointPlan();
     PointPlan(int a, int b);
     PointPlan(PointPlan const &point);

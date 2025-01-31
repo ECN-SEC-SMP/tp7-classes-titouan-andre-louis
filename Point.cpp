@@ -3,9 +3,9 @@
 #include "Point.h"
 
 void PointPlan::translater(int X, int Y) {
-        x=x+X;
-        y=y+Y;
-    }
+    x=x+X;
+    y=y+Y;
+}
 
 PointPlan::PointPlan(int a, int b)
 {
@@ -15,3 +15,6 @@ PointPlan::PointPlan(int a, int b)
 
 int PointPlan::getX() { return x; };
 int PointPlan::getY() { return y; };
+
+void PointPlan::setX(int x) { this->x = x; };
+void PointPlan::setY(int y) { this->y = y; };
