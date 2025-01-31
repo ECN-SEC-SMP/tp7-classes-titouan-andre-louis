@@ -9,8 +9,8 @@ void PointPlan::translater(int X, int Y)
 }
 
 void PointPlan::translater(PointPlan p) {
-    this->x = 0;
-    this->y = 0;
+    this->x = x + p.x;
+    this->y = y + p.y;
 }
 
 PointPlan::PointPlan(int a, int b)
@@ -27,8 +27,8 @@ PointPlan::PointPlan()
 
 PointPlan::PointPlan(PointPlan const &point)
 {
-    this->x = 0;
-    this->y = 0;
+    this->x = point.x;
+    this->y = point.y;
 }
 
 int PointPlan::getX() { return x; };
