@@ -1,6 +1,6 @@
 all: main.out
 
-main.out: main.o	Point.o
+main.out: main.o Point.o
 	g++ -o main.out main.o Point.o 
 
 main.o: main.cpp

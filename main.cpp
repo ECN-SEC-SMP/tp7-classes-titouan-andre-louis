@@ -16,10 +16,20 @@ int main()
     point1.setX(10);
     point1.setY(5);
 
-    point1.translater(point2);
+    //point1.translater(point2);
+    //point1.translater(10,3);
 
-    cout << point1.getX() << endl;
-    cout << point1.getY() << endl;
+    point1 += point2;
+    cout << point1;
+
+    // cout << point1.getX() << endl;
+    // cout << point1.getY() << endl;
+
+    /*
+    point 1 += point2;
+    aff << point 1;    
+    */
+
 
     return 0;
 }

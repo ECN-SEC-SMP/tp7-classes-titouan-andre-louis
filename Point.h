@@ -3,11 +3,16 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class PointPlan {
 private:
     int x, y;
 
 public:
+    friend ostream& operator<<(ostream& aff, const PointPlan& p);
+    void operator+=(PointPlan&);
+
     void translater(PointPlan p);
     void translater(int x, int y);
 
@@ -25,5 +30,6 @@ public:
     void setY(int y);
 };
 
+ostream& operator<<(ostream& aff, const PointPlan& p);
 
 #endif
